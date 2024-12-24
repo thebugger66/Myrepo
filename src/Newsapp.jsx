@@ -22,6 +22,11 @@ const Newsapp = () => {
             <a style={styles.link} href={item.link} target="_blank" rel="noopener noreferrer">
               Read more
             </a>
+            <h3>Author name</h3>
+            <a  > {item.author} </a>
+            <br></br>
+            <br></br>
+            <a style={styles.image}>{index.image}  </a>
           </li>
         ))}
       </ul>
@@ -64,6 +69,11 @@ const styles = {
     color: '#007bff',
     textDecoration: 'none',
   },
+  image:{
+    marginBottom: '20px',
+    borderBottom: '1px solid #ddd',
+    paddingBottom: '20px',
+  }
 
 };
 
